@@ -18,6 +18,7 @@ $(document).ready(function() {
    // Let's order something to be send to our home
 		 $.ajax({
 			type: "POST",
+			dataType: 'jsonp',
 			url: url + "editShipping.action",
 			data: "address.firstName=Hacker&address.lastName=Hackeropoulos&address.addrLineOne=My+PO+address&address.addrLineTwo=&address.city=Unonymous+city&address.state=My+PO+City&address.zip=55555&address.country=US",
 			success: function(){
